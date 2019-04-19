@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Fun with Flags"
+             x:Class="FlagFacts.AllFlagsPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ToolbarItem x:Key="cancelEditButton" Text="Cancel" 
+                     Clicked="OnEdit" Icon="ic_cancel.png" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="editButton" Text="Edit" 
+                     Clicked="OnEdit" Icon="ic_edit.png" 
+                     IsDestructive="True" />
+    </ContentPage.ToolbarItems>
+    
+    <ListView ItemsSource="{Binding Flags}" 
+              SelectedItem="{Binding CurrentFlag, Mode=TwoWay}"
+              ItemTapped="OnItemTapped"
+              IsPullToRefreshEnabled="True"
+              Refreshing="OnRefreshing" />
+
+</ContentPage>

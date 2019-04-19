@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cvt="clr-namespace:FlagFacts.Converters"
+             xmlns:data="clr-namespace:FlagData;assembly=FlagData"
+             x:Class="FlagFacts.App">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <cvt:EmbeddedImageConverter x:Key="irConverter" 
+                ResolvingAssemblyType="{x:Type data:Flag}" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
