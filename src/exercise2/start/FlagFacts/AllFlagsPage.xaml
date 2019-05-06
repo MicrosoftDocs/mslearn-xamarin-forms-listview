@@ -4,6 +4,6 @@
              Title="Fun with Flags"
              x:Class="FlagFacts.AllFlagsPage">
 
-    <ListView ItemsSource="{Binding Flags}" />
+    <ListView ItemsSource="{Binding Flags}" SelectedItem="{Binding CurrentFlag, Mode=TwoWay}" ItemTapped="ListView_ItemTapped" />
 
 </ContentPage>

@@ -11,9 +11,8 @@ namespace FlagFacts
             InitializeComponent();
         }
 
-        private async void OnItemTapped(object sender, ItemTappedEventArgs e)
+        private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            //DependencyService.Get<FunFlactsViewModel>().CurrentFlag = (Flag)e.Item;
             await this.Navigation.PushAsync(new FlagDetailsPage());
         }
     }
