@@ -1,7 +1,6 @@
 # Microsoft Learn: Display collections in Xamarin.Forms apps with ListView
 
-[//]: # (TODO: Link back to Microsoft Learn module.)
-This project contains the source code for the **Display collections in Xamarin.Forms apps with ListView** Microsoft Learn module.
+This project contains the source code for the [**Display collections in Xamarin.Forms apps with ListView**](https://docs.microsoft.com/learn/modules/display-collections-in-xamarin-forms-apps-with-listview/) Microsoft Learn module.
 
 # Contributing
 
