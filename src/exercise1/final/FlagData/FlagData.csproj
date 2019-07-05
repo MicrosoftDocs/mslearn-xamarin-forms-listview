@@ -38,4 +38,8 @@
     <EmbeddedResource Include="Images\usa.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.0.0.540366" />
+  </ItemGroup>
+
 </Project>
